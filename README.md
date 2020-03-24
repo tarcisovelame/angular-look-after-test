@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
 
+## Instalação
+
+Baixe os arquivos e execute `npm install` para instala-lo
+
 ## Development server
 
 Execute `ng serve` para startar o projeto. No browser acesse `http://localhost:4200/`.
