@@ -1,0 +1,35 @@
+<!-- Modal de Login -->
+<div *ngIf="modal == 'login'">
+<div class="modal-header">
+  <h5 class="modal-title">Fazer Login</h5>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="onClose()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <p>Digite seu email e senha de acesso</p>
+  <div class="form-row" >
+    <div class="col-md-12">
+      <label for="email">Email</label>
+      <input type="text" id="email" class="form-control" />
+    </div>
+    <div class="col-md-12">
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" class="form-control" />
+    </div>
+  </div>
+
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-pink">Acessar</button>
+  <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="onClose()">Cancelar</button>
+</div>
+</div>
+
+<!-- Modal de ALerta -->
+<div class="alert alert-{{ type }} alert-modal" role="alert" *ngIf="modal == 'alert'">
+  <span [innerHTML]=message></span>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="onClose()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

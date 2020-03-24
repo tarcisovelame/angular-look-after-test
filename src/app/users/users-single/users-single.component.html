@@ -1,0 +1,14 @@
+<div class="login">
+  <button class="btn btn-outline-light btn-transparent"><fa icon="user"></fa> {{ usuario.email }}</button>
+  <button class="btn btn-outline-light btn-transparent" [routerLink]="['/home']"><fa icon="sign-out-alt"></fa> Sair</button>
+</div>
+
+<div class="content valign-pai">
+  <div class="valign">
+      <h1>Bem-vindo <strong>{{ usuario.nome }}</strong></h1>
+      <p>Você está conosco desde {{ usuario.registro }}</p>
+      <p class="info-compras"><fa icon="exclamation-circle"></fa> As compras on-line estarão disponíveis em breve</p>
+  </div>
+</div>
+
+

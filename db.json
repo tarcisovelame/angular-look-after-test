@@ -1,0 +1,113 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nome": "Tarciso Velame",
+      "email": "tarciso@velameweb.com.br",
+      "telefone": "35 99248-6131",
+      "senha": "123",
+      "registro": "07/03/2000"
+    },
+    {
+      "id": 2,
+      "nome": "Matheus",
+      "email": "matheus@feracode.com.br",
+      "telefone": "11 98855-4884",
+      "senha": "123",
+      "registro": "20/03/2020"
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "marca": "Pampers",
+      "modelo": "Confort Sec",
+      "img": "pampers-confort-sec.png",
+      "tamanhos": [
+        {
+          "tamanho": "RN"
+        },
+        {
+          "tamanho": "P"
+        },
+        {
+          "tamanho": "M"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "marca": "Persona",
+      "modelo": "Soft Protect",
+      "img": "personal-soft-protect.png",
+      "tamanhos": [
+        {
+          "tamanho": "RN"
+        },
+        {
+          "tamanho": "P"
+        },
+        {
+          "tamanho": "M"
+        },
+        {
+          "tamanho": "G"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "marca": "Pom Pom",
+      "modelo": "Protek",
+      "img": "pom-pom-protek.png",
+      "tamanhos": [
+        {
+          "tamanho": "RN"
+        },
+        {
+          "tamanho": "P"
+        },
+        {
+          "tamanho": "M"
+        },
+        {
+          "tamanho": "G"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "marca": "Cremer",
+      "modelo": "Antivazamento",
+      "img": "cremer-antivazamento.png",
+      "tamanhos": [
+        {
+          "tamanho": "M"
+        },
+        {
+          "tamanho": "G"
+        },
+        {
+          "tamanho": "XG"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "marca": "Babysec",
+      "modelo": "Pants",
+      "img": "babysec-pants.png",
+      "tamanhos": [
+        {
+          "tamanho": "P"
+        },
+        {
+          "tamanho": "M"
+        },
+        {
+          "tamanho": "G"
+        }
+      ]
+    }
+  ]
+}

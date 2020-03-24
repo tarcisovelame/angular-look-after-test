@@ -1,0 +1,81 @@
+@import './cores.scss';
+
+/* Bootstrap */
+
+/* FORM */
+
+.form-row {
+  label {
+    color: $corCinza;
+    font-family: 'bebas', Arial;
+    font-size: 1.4em;
+    margin: .5rem 0 0 0;
+  }
+}
+
+.form-control {
+  border-radius: 0;
+  &:focus {
+    border-color: $corRosaClaro;
+    box-shadow: 0 0 0 0.2rem rgba(184,3,255,.25);
+  }
+}
+
+
+/* BTN */
+.btn {
+  border-radius: 0;
+}
+
+.btn + .btn {
+  margin-left: 3px;
+}
+
+.btn-light:hover, .btn-outline-light:hover {
+  color: $corRosaHover;
+}
+
+.btn-transparent {
+  border-color: transparent;
+}
+
+.btn-pink {
+  background: $corRosa;
+  color: #fff;
+  &:hover {
+    background: $corRosaHover;
+  }
+
+  &:focus {
+    border-color: #e49fff;
+    box-shadow: 0 0 0 0.2rem rgba(184, 3, 255, 0.25);
+  }
+}
+
+
+/* ALERT */
+.alert {
+  padding: .25rem 0.75rem;
+  margin-top: .25rem;
+  font-size: .8em;
+}
+
+.alert-modal {
+  padding: 1.25rem 1.75rem;
+  margin: 0;
+  font-size: 1em;
+}
+
+
+/* MODAL */
+.modal-title {
+  color: $corCinza;
+  font-family: 'bebas', Arial;
+  font-size: 2em;;
+}
+
+
+/* BADGE */
+.badge-warning {
+  background: $corAmarela;
+}

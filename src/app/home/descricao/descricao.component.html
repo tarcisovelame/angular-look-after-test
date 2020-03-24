@@ -1,0 +1,45 @@
+<!-- Descricao -->
+<div class="desc valign-pai">
+  <div class="valign">
+    <div class="container">
+      <p *ngIf="tipo == null; else paginaRestrita">Seja bem-vindo ao nosso site, aqui você encontra os <strong>melhores produtos</strong> para sua necessidade! Temos <strong>a melhor qualidade pelo melhor preço</strong></p>
+      <ng-template #paginaRestrita>
+        <p>Você tentou acessar uma página restrita</p>
+      </ng-template>
+    </div>
+
+    <div class="carousel">
+      <carousel-home></carousel-home>
+    </div>
+
+  </div>
+</div>
+
+<!-- Login -->
+<login></login>
+
+<!-- Contatos -->
+<div class="contatos">
+  <p><fa icon="phone-square-alt"></fa> 1-971-diaper <fa icon="envelope-square"></fa> confort@lookafter.com</p>
+</div>
+
+<!-- Redes -->
+<div class="redes-sociais">
+  <ul>
+    <li>
+      <a href="https://www.facebook.com/feracode/" target="_blank">
+        <fa icon="facebook-square" styleFa="fab" size="2x"></fa>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/feracode/" target="_blank">
+        <fa icon="instagram" styleFa="fab" size="2x"></fa>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/channel/UCs42se0W4yn5lheo76li1Fw" target="_blank">
+        <fa icon="youtube" styleFa="fab" size="2x"></fa>
+      </a>
+    </li>
+  </ul>
+</div>

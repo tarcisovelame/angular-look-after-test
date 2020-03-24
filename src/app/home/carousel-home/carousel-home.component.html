@@ -1,0 +1,12 @@
+<carousel [(activeSlide)]="activeSlideIndex">
+<slide *ngFor="let produto of produtos">
+  <img src="{{apiUrl}}/assets/images/produtos/{{ produto.img }}" alt="first slide" style="display: block; width: 100%;">
+  <div class="carousel-caption d-none d-md-block">
+    <h3><span class="badge badge-dark">{{ produto.marca }} <small>{{ produto.modelo }}</small></span></h3>
+    <ul>
+      <li><span class="badge badge-warning">Tamanhos</span></li>
+      <li *ngFor="let tamanho of produto.tamanhos"><span class="badge badge-warning">{{ tamanho.tamanho }}</span></li>
+    </ul>
+  </div>
+</slide>
+</carousel>

@@ -1,0 +1,48 @@
+@import '../../../assets/css/cores.scss';
+
+.desc {
+  color: #fff;
+  font-family: 'bebas', Arial;
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
+	height: 90vh;
+  line-height: 1em;
+
+  strong {
+    font-size: 1.2em;
+    color: $corAmarela;
+    font-weight: normal;
+  }
+}
+
+
+.contatos {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.redes-sociais {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+
+  ul { margin-bottom: 0; }
+  li { 
+    margin-left: 10px;
+    display: inline;
+  }
+  a {
+    color: #fff;
+    transition: color .5s;
+  }
+  a:hover {
+    color: $corAmarela;
+    transition: color .5s;
+  }
+}

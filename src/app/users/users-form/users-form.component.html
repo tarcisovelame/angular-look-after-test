@@ -1,0 +1,47 @@
+<div class="modal-header">
+  <h5 class="modal-title">Criando novo usuário</h5>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="onClose()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+<div class="modal-body">
+  <div class="form-row">
+
+    <div class="col-md-12">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" formControlName="nome" class="form-control" />
+      <app-error-msg [control]="formulario.get('nome')" label="Nome"></app-error-msg>
+    </div>
+    
+    <div class="col-md-12">
+      <label for="email">Email</label>
+      <input type="text" id="email" formControlName="email" class="form-control" />
+      <app-error-msg [control]="formulario.get('email')" label="Email"></app-error-msg>
+    </div>
+    
+    <div class="col-md-12">
+      <label for="telefone">Telefone</label>
+      <input type="text" id="telefone" formControlName="telefone" class="form-control" [textMask]="{mask: maskTelefone}" />
+      <app-error-msg [control]="formulario.get('telefone')" label="Telefone"></app-error-msg>
+    </div>
+    
+    <div class="col-md-12">
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" formControlName="senha" class="form-control" />
+      <app-error-msg [control]="formulario.get('senha')" label="Senha"></app-error-msg>
+    </div>
+
+    <input type="hidden" id="registro" formControlName="registro" class="form-control" />
+
+  </div>
+
+</div>
+
+<div class="modal-footer">
+  <button class="btn btn-pink"><fa icon="save" styleFa="far"></fa> Cadastrar</button>
+  <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="onClose()">Cancelar</button>
+</div>
+
+  
+</form>
